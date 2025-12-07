@@ -51,3 +51,15 @@ img:hover {
   transform: scale(1.02); /* Zoom ligero al pasar el mouse */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Sombra más profunda */
 }
+
+.carousel-caption h5 {
+  font-family: "ChineseRocks", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption p {
+  color: #f5e6d3;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+}

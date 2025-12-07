@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Red Dead Redeption 2.</title>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="RDR2 Logo" style="height: 60px" />
+        </a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio | Lore </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="personajes.html">Personajes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rutas.html">Rutas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ubicaciones.html">Ubicaciones</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Contenido de la página -->
+    <section class="container-fluid mt-5">
+      <div class="row align-content-center text-center align-items-center mb-5">
+        <aside class="col-sm-5 order-sm-1">
+          <img src="img/Mapa.webp" alt="Mapa de RDR2" class="w-100" />
+        </aside>
+        <main class="col-sm-6 order-sm-2">
+          <article>
+            <h2 class="mb-3">Ubicaciones</h2>
+            <p>
+              En Red Dead Redemption 2, cada rincón del mapa cuenta una
+              historia. Desde las ciudades modernas que anuncian el avance de la
+              civilización hasta los pueblos polvorientos olvidados por el
+              tiempo, el mundo que rodea a Arthur Morgan es vasto, vivo y en
+              constante cambio. Cada ubicación tiene su propio carácter: algunos
+              lugares rebosan actividad y comercio, mientras que otros esconden
+              secretos, tragedias y leyendas que definen el ocaso del Salvaje
+              Oeste. Explorar estas tierras no es solo viajar —es descubrir un
+              mundo al borde de su transformación final.
+            </p>
+          </article>
+        </main>
+      </div>
+
+      <hr class="w-50" />
+
+      <div class="row align-content-center text-center align-items-center mb-5">
+        <main class="col-sm-6 order-sm-1">
+          <article class="w-75 mx-auto">
+            <h2 class="mb-3">Blackwater</h2>
+            <p>
+              Blackwater es una de las ciudades más modernas y civilizadas del
+              Oeste, situada en el corazón de West Elizabeth. Su arquitectura
+              ordenada, sus calles limpias y su creciente presencia de la ley la
+              convierten en un símbolo del avance hacia una nueva era, lejos del
+              caos y la brutalidad del Salvaje Oeste. Representa el progreso,
+              aunque para muchos forajidos es también un recordatorio de que el
+              mundo al que pertenecen está desapareciendo.
+            </p>
+          </article>
+        </main>
+        <aside class="col-sm-5 order-sm-2">
+          <div
+            id="carouselBlackwater"
+            class="carousel slide mb-5"
+            data-bs-ride="carousel"
+          >
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselBlackwater"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselBlackwater"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselBlackwater"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <!-- Imágenes -->
+            <div class="carousel-inner rounded shadow">
+              <div class="carousel-item active">
+                <img
+                  src="img/blackwater/b1.jpg"
+                  class="d-block w-100"
+                  alt="Blackwater 1"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Blackwater</h5>
+                  <p>
+                    Una ciudad moderna en un mundo que aún lucha por cambiar.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/blackwater/b2.jpg"
+                  class="d-block w-100"
+                  alt="Blackwater 2"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Atardecer en Blackwater</h5>
+                  <p>Calles limpias, edificios altos y un futuro inevitable.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/blackwater/b3.jpg"
+                  class="d-block w-100"
+                  alt="Blackwater 3"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Blackwater por la noche</h5>
+                  <p>Una ciudad llena de vida… y secretos del pasado.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselBlackwater"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselBlackwater"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </aside>
+      </div>
+
+      <hr class="w-50" />
+
+      <div class="row align-content-center text-center align-items-center mb-5">
+        <aside class="col-sm-5 order-sm-2">
+          <div
+            id="carouselValentine"
+            class="carousel slide mb-5"
+            data-bs-ride="carousel"
+          >
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselValentine"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselValentine"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselValentine"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <!-- Imágenes -->
+            <div class="carousel-inner rounded shadow">
+              <div class="carousel-item active">
+                <img
+                  src="img/valentine/v1.jpg"
+                  class="d-block w-100"
+                  alt="Valentine 1"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Valentine</h5>
+                  <p>
+                    Un pueblo ganadero lleno de vida, conflictos y polvo del
+                    camino.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/valentine/v2.jpg"
+                  class="d-block w-100"
+                  alt="Valentine 2"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Atardecer en Valentine</h5>
+                  <p>
+                    Entre establos, salones y caos, siempre hay algo pasando
+                    aquí.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/valentine/v3.jpg"
+                  class="d-block w-100"
+                  alt="Valentine 3"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Vida en el pueblo</h5>
+                  <p>
+                    El corazón agreste del Oeste: ruido, barro y pura
+                    autenticidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselValentine"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselValentine"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </aside>
+
+        <main class="col-sm-6 order-sm-2">
+          <article class="w-75 mx-auto">
+            <h2 class="mb-3">Valentine</h2>
+            <p>
+              Valentine es un pueblo ganadero rústico y bullicioso ubicado en
+              The Heartlands. Aunque pequeño, siempre está lleno de vida:
+              vaqueros, comerciantes, borrachos del saloon y trabajadores del
+              establo dan forma a un ambiente sucio, ruidoso y a veces
+              peligroso. Es uno de los primeros lugares donde Arthur desarrolla
+              actividades importantes, por lo que rápidamente se convierte en un
+              escenario familiar.
+            </p>
+          </article>
+        </main>
+      </div>
+
+      <hr class="w-50" />
+
+      <div class="row align-content-center text-center align-items-center mb-5">
+        <main class="col-sm-6 order-sm-1">
+          <article class="w-75 mx-auto">
+            <h2 class="mb-3">Saint Denis</h2>
+            <p>
+              Saint Denis es la joya más espectacular del mundo de RDR2, una
+              metrópolis multicultural inspirada en Nueva Orleans que combina
+              lujo, pobreza, industria y corrupción. Es el punto más alto de la
+              modernización dentro del juego: tranvías eléctricos, barrios
+              elegantes, grandes teatros, mansiones, burdeles, factorías y una
+              densa mezcla de culturas que conviven (a veces a la fuerza).
+            </p>
+          </article>
+        </main>
+        <aside class="col-sm-5 order-sm-2">
+          <div
+            id="carouselSaintDenis"
+            class="carousel slide mb-5"
+            data-bs-ride="carousel"
+          >
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselSaintDenis"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselSaintDenis"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselSaintDenis"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <!-- Imágenes -->
+            <div class="carousel-inner rounded shadow">
+              <div class="carousel-item active">
+                <img
+                  src="img/saintdenis/s1.jpg"
+                  class="d-block w-100"
+                  alt="Saint Denis 1"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Saint Denis</h5>
+                  <p>
+                    La joya industrial del Este, un hervidero de vida, comercio
+                    y humo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/saintdenis/s2.jpg"
+                  class="d-block w-100"
+                  alt="Saint Denis 2"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Calles de la ciudad</h5>
+                  <p>
+                    Tranvías, luces y un bullicio constante marcan el ritmo de
+                    este centro urbano.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/saintdenis/s3.jpg"
+                  class="d-block w-100"
+                  alt="Saint Denis 3"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Noche en Saint Denis</h5>
+                  <p>
+                    Entre teatros, bares elegantes y callejones sombríos, la
+                    ciudad esconde mil historias.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselSaintDenis"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselSaintDenis"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </aside>
+      </div>
+
+      <hr class="w-50" />
+
+      <div class="row align-content-center text-center align-items-center mb-5">
+        <aside class="col-sm-5 order-sm-2">
+          <div
+            id="carouselRhodes"
+            class="carousel slide mb-5"
+            data-bs-ride="carousel"
+          >
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselRhodes"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselRhodes"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselRhodes"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <!-- Imágenes -->
+            <div class="carousel-inner rounded shadow">
+              <div class="carousel-item active">
+                <img
+                  src="img/rhodes/r1.jpg"
+                  class="d-block w-100"
+                  alt="Rhodes 1"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Rhodes</h5>
+                  <p>
+                    Un pueblo sureño aparentemente tranquilo, marcado por viejas
+                    rivalidades.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/rhodes/r2.jpg"
+                  class="d-block w-100"
+                  alt="Rhodes 2"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Plaza de Rhodes</h5>
+                  <p>
+                    Bajo su calma, se esconde la tensión constante entre los
+                    Gray y los Braithwaite.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/rhodes/r3.jpg"
+                  class="d-block w-100"
+                  alt="Rhodes 3"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Atmósfera del Sur</h5>
+                  <p>
+                    El calor, el polvo y las plantaciones cercanas dan forma a
+                    su identidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselRhodes"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselRhodes"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </aside>
+
+        <main class="col-sm-6 order-sm-2">
+          <article class="w-75 mx-auto">
+            <h2 class="mb-3">Rhodes</h2>
+            <p>
+              Rhodes parece un pueblo sureño tranquilo y elegante, pero su
+              fachada esconde uno de los conflictos más sangrientos e históricos
+              del juego: la rivalidad entre las familias Braithwaite y Gray. Su
+              arquitectura sureña, plantaciones, clima cálido y campos de tabaco
+              evocan un pasado marcado por tensiones raciales, traiciones y
+              cicatrices de la Guerra Civil.
+            </p>
+          </article>
+        </main>
+      </div>
+
+      <div class="row align-content-center text-center align-items-center mb-5">
+        <main class="col-sm-6 order-sm-1">
+          <article class="w-75 mx-auto">
+            <h2 class="mb-3">Annesburg</h2>
+            <p>
+              Annesburg es un asentamiento minero ubicado en Roanoke Ridge, al
+              noreste del mapa. Es uno de los lugares más sombríos del juego,
+              dominado por pobreza, humo de carbón y un aire perpetuo de
+              sufrimiento. Las minas consumen la vida de trabajadores exhaustos,
+              muchos de ellos inmigrantes pobres, obligados a soportar
+              condiciones terribles para obtener un salario miserable.
+            </p>
+          </article>
+        </main>
+
+        <aside class="col-sm-5 order-sm-2">
+          <div
+            id="carouselAnnesburg"
+            class="carousel slide mb-5"
+            data-bs-ride="carousel"
+          >
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselAnnesburg"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselAnnesburg"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselAnnesburg"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <!-- Imágenes -->
+            <div class="carousel-inner rounded shadow">
+              <div class="carousel-item active">
+                <img
+                  src="img/annesburg/a1.webp"
+                  class="d-block w-100"
+                  alt="Annesburg 1"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Annesburg</h5>
+                  <p>
+                    Una ciudad minera dura y llena de sufrimiento, donde cada
+                    día es una lucha por sobrevivir.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/annesburg/a2.webp"
+                  class="d-block w-100"
+                  alt="Annesburg 2"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Mina de Carbón</h5>
+                  <p>
+                    El corazón del pueblo late entre túneles oscuros, humo y
+                    condiciones inhumanas de trabajo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/annesburg/a3.webp"
+                  class="d-block w-100"
+                  alt="Annesburg 3"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Borde del Río Kamassa</h5>
+                  <p>
+                    Entre barcos, niebla y maquinaria, la ciudad refleja el lado
+                    más crudo de la industrialización.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselAnnesburg"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselAnnesburg"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center mt-5 p-3">
+      <div class="container">
+        <p>
+          Sitio Fan RDR2. © 2025. Los recursos multimedia están bajo licencia
+          [Especifica Licencia CC/Propia/Dominio Público][cite: 45].
+        </p>
+        <p class="mt-2">
+          <a href="licencias.html" class="text-white text-decoration-underline"
+            >Créditos y Licencias de Uso Detalladas</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
