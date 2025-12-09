@@ -1,37 +1,38 @@
 /* Fondo principal tipo RDR2 */
 body {
-  background-color: #2b1b17; /* marrón oscuro / rojo profundo */
-  color: #f5e6d3; /* beige claro para leer con contraste */
-  font-family: "ChineseRocks", serif;
+  background-color: #2b1b17; 
+  color: #f5e6d3;
+  font-family: "TextoRDR2", serif;
   padding-top: 80px;
 } /* Encabezados */
 h2 {
-  font-family: "ChineseRocks", serif;
+  font-family: "FuenteRDR2", serif;
   font-size: 2.5rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #f5e6d3; /* color claro */
+  color: #f5e6d3;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6);
 }
 h4 {
-  font-family: "ChineseRocks", serif;
+  font-family: "FuenteRDR2", serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #f5e6d3; /* color claro */
+  color: #f5e6d3;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6);
 } /* Navbar */
 .navbar {
-  background-color: #3b2220; /* marrón más oscuro */
+  background-color: #3b2220; 
 }
 .navbar-nav .nav-link {
   color: #f5e6d3 !important;
-  font-family: "ChineseRocks", serif;
+  font-family: "FuenteRDR2", serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 .navbar-nav .nav-link:hover {
-  color: #ffd3a5 !important; /* un dorado suave al pasar el mouse */
-} /* Separadores */
+  color: #ffd3a5 !important;
+}
+ /* Separadores */
 hr {
   border: 1px solid #5c3832;
   background-color: #5c3832;
@@ -48,12 +49,12 @@ img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 img:hover {
-  transform: scale(1.02); /* Zoom ligero al pasar el mouse */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Sombra más profunda */
+  transform: scale(1.02); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .carousel-caption h5 {
-  font-family: "ChineseRocks", serif;
+  font-family: "FuenteRDR2", serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
@@ -63,3 +64,18 @@ img:hover {
   color: #f5e6d3;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
 }
+
+@font-face {
+  font-family: "FuenteRDR2";
+  src: url("./fonts/titulos.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TextoRDR2";
+  src: url("./fonts/texto.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
