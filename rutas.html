@@ -1,167 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS propio -->
     <link rel="stylesheet" href="main.css" />
 
-    <title>Red Dead Redeption 2.</title>
+    <title>Rutas de Honor | Red Dead Redemption 2</title>
   </head>
-  <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+
+  <body class="pt-5">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.svg" alt="RDR2 Logo" style="height: 20px"  />
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img
+            src="img/logo.svg"
+            alt="Red Dead Redemption 2 Logo"
+            height="30"
+            loading="eager"
+          />
         </a>
 
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio | Lore </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="personajes.html">Personajes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="rutas.html">Rutas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ubicaciones.html">Ubicaciones</a>
-          </li>
-        </ul>
+        <!-- Botón hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Menú de navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 justify-content-center" href="index.html">
+                <i class="bi bi-book"></i>
+                Inicio | Lore
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 justify-content-center" href="personajes.html">
+                <i class="bi bi-file-person"></i>
+                Personajes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active d-flex align-items-center gap-2 justify-content-center" href="rutas.html">
+                <i class="bi bi-signpost"></i>
+                Rutas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 justify-content-center" href="ubicaciones.html">
+                <i class="bi bi-shop"></i>
+                Ubicaciones
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <!-- Contenido de la página -->
-    <section class="container-fluid mt-5">
-      <!-- Introducción -->
-      <div class="row align-content-center text-center align-items-center mb-5">
-        <aside class="col-sm-5">
-          <img src="img/InicioRuta.jpg" alt="Rutas de Honor" class="w-100" />
-        </aside>
-        <main class="col-sm-6">
-          <article class="w-75 mx-auto">
-            <h2 class="mb-3">Rutas de Honor</h2>
-            <p>
-              En Red Dead Redemption 2, cada acción de Arthur Morgan afecta su
-              honor, un medidor que refleja su moralidad y reputación en el
-              Salvaje Oeste. Las decisiones que tomas determinan no solo cómo te
-              tratan los NPCs, sino también los finales posibles del juego. Tu
-              ruta puede llevarte hacia la redención y la admiración de los
-              demás (High Honor), o hacia el desprecio y la corrupción moral
-              (Low Honor).
-            </p>
-          </article>
-        </main>
-      </div>
 
-      <hr class="w-50" />
+    <!-- CONTENIDO -->
+    <main class="container-fluid mt-4">
+
+      <!-- Introducción -->
+      <section class="row align-items-center text-center mb-5">
+        <aside class="col-lg-5 mb-3 mb-lg-0">
+          <img
+            src="img/InicioRuta.jpg"
+            alt="Rutas de Honor"
+            class="img-fluid rounded"
+            loading="lazy"
+            decoding="async"
+          />
+        </aside>
+        <article class="col-lg-7 px-lg-5">
+          <h2 class="mb-3">Rutas de Honor</h2>
+          <p>
+            En Red Dead Redemption 2, cada acción de Arthur Morgan afecta su
+            honor, un medidor que refleja su moralidad y reputación en el
+            Salvaje Oeste. Las decisiones que tomas determinan no solo cómo te
+            tratan los NPCs, sino también los finales posibles del juego. Tu
+            ruta puede llevarte hacia la redención y la admiración de los
+            demás (High Honor), o hacia el desprecio y la corrupción moral
+            (Low Honor).
+          </p>
+        </article>
+      </section>
+
+      <hr class="w-50 mx-auto" />
 
       <!-- High Honor -->
-      <div class="row mb-5">
-        <main class="col-sm-6 order-sm-1">
-          <article class="w-75 mx-auto">
-            <h2 class="mb-3" style="margin-top: 100px;">High Honor</h2>
-
-            <p>
-              Mantener un alto honor implica actuar con justicia y ayudar a los
-              demás. Esto incluye:
-            </p>
-
-            <ul>
-              <li>Pagar las deudas y multas en el juego.</li>
-              <li>Ayudar a los NPCs en misiones secundarias.</li>
-              <li>Evitar asesinatos innecesarios.</li>
-              <li>Liberar a enemigos cuando sea posible.</li>
-              <li>Tratar bien a los miembros de la banda y a los animales.</li>
-            </ul>
-            
-          </article>
-        </main>
-        <aside class="col-sm-5 order-sm-2">
-          <img src="img/HighHonor.jpg" alt="High Honor" class="w-100" />
+      <section class="row align-items-center text-center mb-5 flex-lg-row-reverse">
+        <aside class="col-lg-5 mb-3 mb-lg-0">
+          <img
+            src="img/HighHonor.jpg"
+            alt="High Honor"
+            class="img-fluid rounded"
+            loading="lazy"
+            decoding="async"
+          />
         </aside>
-      </div>
+        <article class="col-lg-7 px-lg-5">
+          <h2 class="mb-3">High Honor</h2>
+          <p>
+            Mantener un alto honor implica actuar con justicia y ayudar a los
+            demás. Esto incluye:
+          </p>
+          <ul class="text-start d-inline-block">
+            <li>Pagar las deudas y multas en el juego.</li>
+            <li>Ayudar a los NPCs en misiones secundarias.</li>
+            <li>Evitar asesinatos innecesarios.</li>
+            <li>Liberar a enemigos cuando sea posible.</li>
+            <li>Tratar bien a los miembros de la banda y a los animales.</li>
+          </ul>
+        </article>
+      </section>
 
-      <hr class="w-50" />
+      <hr class="w-50 mx-auto" />
 
       <!-- Low Honor -->
-      <div class="row mb-5">
-        <aside class="col-sm-5 order-sm-1">
-          <img src="img/LowHonor.jpg" alt="Low Honor" class="w-100" />
+      <section class="row align-items-center text-center mb-5">
+        <aside class="col-lg-5 mb-3 mb-lg-0">
+          <img
+            src="img/LowHonor.jpg"
+            alt="Low Honor"
+            class="img-fluid rounded"
+            loading="lazy"
+            decoding="async"
+          />
         </aside>
-        <main class="col-sm-6 order-sm-2">
-          <article class="w-75 mx-auto">
-            <h2 class="mb-3" style="margin-top: 100px;">Low Honor</h2>
+        <article class="col-lg-7 px-lg-5">
+          <h2 class="mb-3">Low Honor</h2>
+          <p>
+            Seguir una ruta de Low Honor significa actuar de manera egoísta y
+            violenta. Esto incluye:
+          </p>
+          <ul class="text-start d-inline-block">
+            <li>Robar, asesinar y extorsionar sin remordimientos.</li>
+            <li>Ignorar las leyes y perseguir tus propios intereses.</li>
+            <li>Maltratar o ignorar a los NPCs y miembros de la banda.</li>
+          </ul>
+        </article>
+      </section>
 
-            <p>
-              Seguir una ruta de Low Honor significa actuar de manera egoísta y
-              violenta. Esto incluye:
-            </p>
-
-            <ul>
-              <li>Robar, asesinar y extorsionar sin remordimientos.</li>
-              <li>Ignorar las leyes y perseguir tus propios intereses.</li>
-              <li>Maltratar o ignorar a los NPCs y miembros de la banda.</li>
-            </ul>
-          </article>
-        </main>
-      </div>
-
-      <hr class="w-50" />
+      <hr class="w-50 mx-auto" />
 
       <!-- Consejos -->
-      <div class="row mb-5">
-        <main class="col-sm-6 order-sm-1">
-          <article class="w-75 mx-auto">
-            <h2 class="mb-3">Consejos para elegir tu ruta</h2>
-
-            <br /><br />
-
-            <h4>High Honor:</h4>
-
-            <ul>
-              <li>
-                Completa misiones secundarias que impliquen ayudar a otros.
-              </li>
-              <li>Devuelve objetos robados o dinero perdido.</li>
-              <li>Evita matar por diversión.</li>
-              <li>Paga las recompensas y multas inmediatamente.</li>
-            </ul>
-
-            <h4>Low Honor:</h4>
-
-            <ul>
-              <li>Roba y mata sin remordimientos.</li>
-              <li>Ignora a las autoridades.</li>
-              <li>Participa en misiones violentas o ilegales.</li>
-              <li>Maltrata a personajes y animales.</li>
-            </ul>
-          </article>
-        </main>
-        <aside class="col-sm-5 order-sm-2">
-          <img src="img/Tips.jpg" alt="Consejos de Honor" class="w-100" />
+      <section class="row align-items-center text-center mb-5 flex-lg-row-reverse">
+        <aside class="col-lg-5 mb-3 mb-lg-0">
+          <img
+            src="img/Tips.jpg"
+            alt="Consejos de Honor"
+            class="img-fluid rounded"
+            loading="lazy"
+            decoding="async"
+          />
         </aside>
-      </div>
-    </section>
+        <article class="col-lg-7 px-lg-5">
+          <h2 class="mb-3">Consejos para elegir tu ruta</h2>
 
-    <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center mt-5 p-3">
+          <h4 class="mt-4">High Honor:</h4>
+          <ul class="text-start d-inline-block">
+            <li>Completa misiones secundarias que impliquen ayudar a otros.</li>
+            <li>Devuelve objetos robados o dinero perdido.</li>
+            <li>Evita matar por diversión.</li>
+            <li>Paga las recompensas y multas inmediatamente.</li>
+          </ul>
+
+          <h4 class="mt-4">Low Honor:</h4>
+          <ul class="text-start d-inline-block">
+            <li>Roba y mata sin remordimientos.</li>
+            <li>Ignora a las autoridades.</li>
+            <li>Participa en misiones violentas o ilegales.</li>
+            <li>Maltrata a personajes y animales.</li>
+          </ul>
+        </article>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center mt-5 p-4">
       <div class="container">
-        <p>
-         El contenido de la comunidad está disponible bajo CC-BY-SA a menos que se indique lo contrario.
+        <p class="mb-2">
+          El contenido de la comunidad está disponible bajo CC-BY-SA a menos
+          que se indique lo contrario.
         </p>
-        <p class="mt-2">
-          <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" class="text-white text-decoration-underline"
-            >Créditos y Licencias de Uso Detalladas</a
-          >
-        </p>
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+          class="text-white text-decoration-underline"
+        >
+          Créditos y Licencias de Uso Detalladas
+        </a>
       </div>
     </footer>
+
+        <!-- AUDIO GLOBAL -->
+    <audio id="audioBackground" loop>
+      <source src="audio/m2.mp3" type="audio/mpeg" />.
+      <source src="audio/m2.ogg" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+
+    <!-- BURBUJA -->
+    <div id="audioBubble" class="audio-bubble">
+      <i id="audioIcon" class="bi bi-music-note-beamed"></i>
+    </div>
+
+    <script src="burbuja.js"></script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
