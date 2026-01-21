@@ -3,11 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Conoce a los personajes principales de Red Dead Redemption 2: Arthur Morgan, Dutch van der Linde, John Marston, Sadie Adler y más miembros de la banda." />
+    <meta name="keywords" content="Arthur Morgan, Dutch van der Linde, John Marston, Hosea Matthews, Micah Bell, Sadie Adler, personajes RDR2, banda Van der Linde" />
+    <meta name="author" content="RDR2 Wiki Español" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Personajes de Red Dead Redemption 2 - Guía Completa" />
+    <meta property="og:description" content="Descubre la historia de Arthur Morgan, Dutch, John Marston y todos los personajes de la banda de Van der Linde" />
+    <meta property="og:image" content="img/foto2.jpg" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Personajes RDR2 - La Banda de Van der Linde" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tusitio.com/personajes.html" />
 
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      crossorigin="anonymous"
     />
 
     <!-- Bootstrap Icons -->
@@ -19,18 +39,22 @@
     <!-- CSS propio -->
     <link rel="stylesheet" href="main.css" />
 
-    <title>Personajes | Red Dead Redemption 2</title>
+    <title>Personajes de Red Dead Redemption 2 | Arthur Morgan y la Banda de Van der Linde</title>
   </head>
 
   <body class="pt-5">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="visually-hidden-focusable">Saltar al contenido principal</a>
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" role="navigation" aria-label="Navegación principal">
       <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" aria-label="Ir a la página de inicio">
           <img
             src="img/logo.svg"
-            alt="Red Dead Redemption 2 Logo"
+            alt="Logotipo de Red Dead Redemption 2"
             height="30"
+            width="auto"
             loading="eager"
           />
         </a>
@@ -43,7 +67,7 @@
           data-bs-target="#mainNavbar"
           aria-controls="mainNavbar"
           aria-expanded="false"
-          aria-label="Menú de navegación"
+          aria-label="Abrir menú de navegación"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -52,25 +76,25 @@
           <ul class="navbar-nav ms-auto text-center">
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2 justify-content-center" href="index.html">
-                <i class="bi bi-book"></i>
+                <i class="bi bi-book" aria-hidden="true"></i>
                 Inicio | Lore
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active d-flex align-items-center gap-2 justify-content-center" href="personajes.html">
-                <i class="bi bi-file-person"></i>
+              <a class="nav-link active d-flex align-items-center gap-2 justify-content-center" href="personajes.html" aria-current="page">
+                <i class="bi bi-file-person" aria-hidden="true"></i>
                 Personajes
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2 justify-content-center" href="rutas.html">
-                <i class="bi bi-signpost"></i>
+                <i class="bi bi-signpost" aria-hidden="true"></i>
                 Rutas
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2 justify-content-center" href="ubicaciones.html">
-                <i class="bi bi-shop"></i>
+                <i class="bi bi-shop" aria-hidden="true"></i>
                 Ubicaciones
               </a>
             </li>
@@ -79,22 +103,24 @@
       </div>
     </nav>
 
-    <!-- CONTENIDO -->
-    <main class="container-fluid mt-4">
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="main-content" class="container-fluid mt-4">
+
+      <h1 class="visually-hidden">Personajes Principales de Red Dead Redemption 2</h1>
 
       <!-- Banda de Van der Linde -->
-      <section class="row align-items-center text-center mb-5">
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+      <section class="row align-items-center text-center mb-5" aria-labelledby="banda-titulo">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/foto3.jpg"
-            alt="La banda de Van der Linde"
+            alt="Foto grupal de todos los miembros de la banda de Van der Linde reunidos en el campamento"
             class="img-fluid rounded"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">La banda de Van der Linde</h2>
+          <h2 id="banda-titulo" class="mb-3">La banda de Van der Linde</h2>
           <p>
             En esta categoría encontrarás información detallada sobre los
             personajes más importantes de Red Dead Redemption 2. Cada uno de
@@ -110,21 +136,21 @@
         </article>
       </section>
 
-      <hr />
+      <hr aria-hidden="true" />
 
       <!-- Arthur Morgan -->
-      <section class="row align-items-center text-center mb-5 flex-lg-row-reverse">
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+      <section class="row align-items-center text-center mb-5 flex-lg-row-reverse" aria-labelledby="arthur-titulo">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/foto2.jpg"
-            alt="Arthur Morgan"
+            alt="Retrato de Arthur Morgan, el protagonista de Red Dead Redemption 2, con sombrero de vaquero"
             class="img-fluid rounded w-75"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">Arthur Morgan</h2>
+          <h2 id="arthur-titulo" class="mb-3">Arthur Morgan</h2>
           <p>
             Arthur Morgan es el protagonista de Red Dead Redemption 2 y uno de
             los miembros más veteranos y respetados de la banda de Dutch van der
@@ -137,21 +163,21 @@
         </article>
       </section>
 
-      <hr class="w-50 mx-auto" />
+      <hr class="w-50 mx-auto" aria-hidden="true" />
 
       <!-- Dutch -->
-      <section class="row align-items-center text-center mb-5">
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+      <section class="row align-items-center text-center mb-5" aria-labelledby="dutch-titulo">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/duch.jpg"
-            alt="Dutch Van Der Linde"
+            alt="Retrato de Dutch Van Der Linde, líder carismático de la banda, con bigote distintivo"
             class="img-fluid rounded w-75"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">Dutch Van Der Linde</h2>
+          <h2 id="dutch-titulo" class="mb-3">Dutch Van Der Linde</h2>
           <p>
             Dutch van der Linde es el carismático y complejo líder de la banda
             que lleva su nombre. Filosófico, visionario y profundamente
@@ -164,21 +190,21 @@
         </article>
       </section>
 
-      <hr class="w-50 mx-auto" />
+      <hr class="w-50 mx-auto" aria-hidden="true" />
 
       <!-- Hosea -->
-      <section class="row align-items-center text-center mb-5 flex-lg-row-reverse">
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+      <section class="row align-items-center text-center mb-5 flex-lg-row-reverse" aria-labelledby="hosea-titulo">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/Hosea Matthews.jpg"
-            alt="Hosea Matthews"
+            alt="Retrato de Hosea Matthews, el miembro más sabio y veterano de la banda de Van der Linde"
             class="img-fluid rounded w-75"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">Hosea Matthews</h2>
+          <h2 id="hosea-titulo" class="mb-3">Hosea Matthews</h2>
           <p>
             Hosea Matthews es uno de los miembros fundadores y la figura más
             sabia dentro de la banda de Van der Linde. Estafador veterano y
@@ -190,21 +216,21 @@
         </article>
       </section>
 
-      <hr class="w-50 mx-auto" />
+      <hr class="w-50 mx-auto" aria-hidden="true" />
 
       <!-- Micah -->
-      <section class="row align-items-center text-center mb-5">
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+      <section class="row align-items-center text-center mb-5" aria-labelledby="micah-titulo">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/Micah Bell.jpg"
-            alt="Micah Bell"
+            alt="Retrato de Micah Bell, el antagonista de la historia, con expresión amenazante"
             class="img-fluid rounded w-75"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">Micah Bell</h2>
+          <h2 id="micah-titulo" class="mb-3">Micah Bell</h2>
           <p>
             Micah Bell es uno de los miembros más controversiales y peligrosos
             de la banda de Van der Linde. Procedente de una familia de
@@ -217,21 +243,21 @@
         </article>
       </section>
 
-      <hr class="w-50 mx-auto" />
+      <hr class="w-50 mx-auto" aria-hidden="true" />
 
       <!-- John -->
-      <section class="row align-items-center text-center mb-5 flex-lg-row-reverse">
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+      <section class="row align-items-center text-center mb-5 flex-lg-row-reverse" aria-labelledby="john-titulo">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/John Marston.jpg"
-            alt="John Marston"
+            alt="Retrato de John Marston, protagonista del primer Red Dead Redemption, con cicatrices faciales"
             class="img-fluid rounded w-75"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">John Marston</h2>
+          <h2 id="john-titulo" class="mb-3">John Marston</h2>
           <p>
             John Marston es uno de los personajes más emblemáticos de la saga
             Red Dead Redemption. Miembro importante de la banda de Van der
@@ -244,21 +270,21 @@
         </article>
       </section>
 
-      <hr class="w-50 mx-auto" />
+      <hr class="w-50 mx-auto" aria-hidden="true" />
 
       <!-- Sadie -->
-      <section class="row align-items-center text-center mb-5">
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+      <section class="row align-items-center text-center mb-5" aria-labelledby="sadie-titulo">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/Sadie Adler.jpg"
-            alt="Sadie Adler"
+            alt="Retrato de Sadie Adler, cazarrecompensas valiente y decidida, con expresión determinada"
             class="img-fluid rounded w-75"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">Sadie Adler</h2>
+          <h2 id="sadie-titulo" class="mb-3">Sadie Adler</h2>
           <p>
             Sadie Adler es uno de los personajes más fuertes y memorables de
             Red Dead Redemption 2. Presentada inicialmente como una mujer
@@ -274,37 +300,40 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center mt-5 p-4">
+    <footer class="bg-dark text-white text-center mt-5 p-4" role="contentinfo">
       <div class="container">
         <p class="mb-2">
-          El contenido de la comunidad está disponible bajo CC-BY-SA a menos
-          que se indique lo contrario.
+          El contenido de la comunidad está disponible bajo 
+          <abbr title="Creative Commons Atribución-CompartirIgual">CC-BY-SA</abbr>
+          a menos que se indique lo contrario.
         </p>
         <a
           href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"
           class="text-white text-decoration-underline"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Créditos y Licencias de Uso Detalladas
         </a>
       </div>
     </footer>
 
-  <!-- AUDIO GLOBAL -->
-    <audio id="audioBackground" loop>
-        <source src="audio/m1.mp3" type="audio/mpeg" />
+    <!-- AUDIO GLOBAL -->
+    <audio id="audioBackground" loop aria-label="Música de fondo">
+      <source src="audio/m1.mp3" type="audio/mpeg" />
       <source src="audio/m1.ogg" type="audio/ogg" />
-      Tu navegador no soporta audio HTML5.
+      <p>Tu navegador no soporta el elemento de audio HTML5.</p>
     </audio>
 
     <!-- BURBUJA DE AUDIO -->
-    <div id="audioBubble" class="audio-bubble">
-      <i id="audioIcon" class="bi bi-music-note-beamed"></i>
-    </div>
+    <button id="audioBubble" class="audio-bubble" aria-label="Controlar reproducción de música de fondo" aria-pressed="false">
+      <i id="audioIcon" class="bi bi-music-note-beamed" aria-hidden="true"></i>
+      <span class="visually-hidden">Reproducir/Pausar música</span>
+    </button>
    
     <script src="burbuja.js"></script>
 
-
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </body>
 </html>

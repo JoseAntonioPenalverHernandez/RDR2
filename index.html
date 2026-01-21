@@ -3,11 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Descubre el lore completo de Red Dead Redemption 2. Explora la historia de Arthur Morgan, la banda de Van der Linde y el ocaso del Salvaje Oeste en 1899." />
+    <meta name="keywords" content="Red Dead Redemption 2, RDR2, Arthur Morgan, Van der Linde, lore, historia, Salvaje Oeste, Rockstar Games" />
+    <meta name="author" content="RDR2 Wiki Español" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Red Dead Redemption 2 - Lore y Historia Completa" />
+    <meta property="og:description" content="Explora el mundo de RDR2: lore, personajes, ubicaciones y la épica historia del ocaso del Oeste." />
+    <meta property="og:image" content="img/banner.jpg" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Red Dead Redemption 2 - Lore Completo" />
+    <meta name="twitter:description" content="Historia completa de Arthur Morgan y la banda de Van der Linde" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tusitio.com/index.html" />
 
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-..." 
+      crossorigin="anonymous"
     />
 
     <!-- Bootstrap Icons -->
@@ -19,22 +41,26 @@
     <!-- CSS propio -->
     <link rel="stylesheet" href="main.css" />
 
-    <title>Red Dead Redemption 2</title>
+    <title>Red Dead Redemption 2 - Lore e Historia del Salvaje Oeste | Guía Completa</title>
   </head>
 
   <body class="pt-5">
+    <a href="#main-content" class="visually-hidden-focusable">Saltar al contenido principal</a>
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" role="navigation" aria-label="Navegación principal">
       <div class="container-fluid">
         <!-- Logo -->
         <a
           class="navbar-brand d-flex align-items-center gap-2"
           href="index.html"
+          aria-label="Ir a la página de inicio de Red Dead Redemption 2"
         >
           <img
             src="img/logo.svg"
-            alt="Red Dead Redemption 2 Logo"
+            alt="Logotipo de Red Dead Redemption 2"
             height="30"
+            width="auto"
             loading="eager"
           />
         </a>
@@ -47,7 +73,7 @@
           data-bs-target="#mainNavbar"
           aria-controls="mainNavbar"
           aria-expanded="false"
-          aria-label="Menú de navegación"
+          aria-label="Abrir menú de navegación"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -57,10 +83,11 @@
           <ul class="navbar-nav ms-auto text-center">
             <li class="nav-item">
               <a
-                class="nav-link d-flex align-items-center gap-2 justify-content-center"
+                class="nav-link active d-flex align-items-center gap-2 justify-content-center"
                 href="index.html"
+                aria-current="page"
               >
-                <i class="bi bi-book"></i>
+                <i class="bi bi-book" aria-hidden="true"></i>
                 Inicio | Lore
               </a>
             </li>
@@ -69,7 +96,7 @@
                 class="nav-link d-flex align-items-center gap-2 justify-content-center"
                 href="personajes.html"
               >
-                <i class="bi bi-file-person"></i>
+                <i class="bi bi-file-person" aria-hidden="true"></i>
                 Personajes
               </a>
             </li>
@@ -78,7 +105,7 @@
                 class="nav-link d-flex align-items-center gap-2 justify-content-center"
                 href="rutas.html"
               >
-                <i class="bi bi-signpost"></i>
+                <i class="bi bi-signpost" aria-hidden="true"></i>
                 Rutas
               </a>
             </li>
@@ -87,7 +114,7 @@
                 class="nav-link d-flex align-items-center gap-2 justify-content-center"
                 href="ubicaciones.html"
               >
-                <i class="bi bi-shop"></i>
+                <i class="bi bi-shop" aria-hidden="true"></i>
                 Ubicaciones
               </a>
             </li>
@@ -96,14 +123,15 @@
       </div>
     </nav>
 
-    <!-- CONTENIDO -->
-    <main class="container-fluid mt-4">
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="main-content" class="container-fluid mt-4">
       <!-- Banner -->
-      <section class="row justify-content-center text-center mb-5">
+      <section class="row justify-content-center text-center mb-5" aria-labelledby="banner-heading">
         <div class="col-12">
+          <h1 id="banner-heading" class="visually-hidden">Red Dead Redemption 2 - Bienvenido al Salvaje Oeste</h1>
           <img
             src="img/banner.jpg"
-            alt="Banner Red Dead Redemption 2"
+            alt="Banner promocional de Red Dead Redemption 2 mostrando a Arthur Morgan cabalgando en el Salvaje Oeste"
             class="img-fluid w-100 rounded"
             loading="lazy"
             decoding="async"
@@ -111,21 +139,21 @@
         </div>
       </section>
 
-      <hr class="w-100" />
+      <hr class="w-100" aria-hidden="true" />
 
       <!-- Lore Principal -->
-      <section class="row align-items-center text-center mb-5">
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+      <section class="row align-items-center text-center mb-5" aria-labelledby="lore-principal">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/LorePrincipal.png"
-            alt="Mapa de RDR2"
+            alt="Mapa detallado del mundo de Red Dead Redemption 2 mostrando las diferentes regiones y estados"
             class="img-fluid rounded"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">Lore Principal</h2>
+          <h2 id="lore-principal" class="mb-3">Lore Principal</h2>
           <p>
             América, 1899. El ocaso del Salvaje Oeste ha comenzado. Tras un
             desastroso atraco fallido en la ciudad de Blackwater, Arthur Morgan
@@ -140,23 +168,24 @@
         </article>
       </section>
 
-      <hr class="w-50 mx-auto" />
+      <hr class="w-50 mx-auto" aria-hidden="true" />
 
       <!-- La Vida en el Oeste -->
       <section
         class="row align-items-center text-center mb-5 flex-lg-row-reverse"
+        aria-labelledby="vida-oeste"
       >
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/VidaOeste.jpg"
-            alt="Paisajes del Oeste"
+            alt="Paisajes y montañas del Oeste americano con un vaquero a caballo al atardecer"
             class="img-fluid rounded"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">La Vida en el Oeste</h2>
+          <h2 id="vida-oeste" class="mb-3">La Vida en el Oeste</h2>
           <p>
             El oeste americano en 1899 es un lugar peligroso y salvaje. Desde
             pequeñas aldeas hasta grandes ciudades, la vida es dura y la
@@ -167,21 +196,21 @@
         </article>
       </section>
 
-      <hr class="w-50 mx-auto" />
+      <hr class="w-50 mx-auto" aria-hidden="true" />
 
       <!-- Conflictos internos -->
-      <section class="row align-items-center text-center mb-5">
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+      <section class="row align-items-center text-center mb-5" aria-labelledby="conflictos">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/Confictos.jpg"
-            alt="Conflictos internos"
+            alt="Miembros de la banda de Van der Linde en tensión durante una discusión en el campamento"
             class="img-fluid rounded"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">Conflictos Internos</h2>
+          <h2 id="conflictos" class="mb-3">Conflictos Internos</h2>
           <p>
             A medida que la presión aumenta, las tensiones dentro de la banda
             también crecen. Diferencias en la visión de Dutch, ambiciones
@@ -192,23 +221,24 @@
         </article>
       </section>
 
-      <hr class="w-50 mx-auto" />
+      <hr class="w-50 mx-auto" aria-hidden="true" />
 
       <!-- Redención y Elecciones -->
       <section
         class="row align-items-center text-center mb-5 flex-lg-row-reverse"
+        aria-labelledby="redencion"
       >
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/Redepcion.jpeg"
-            alt="Redención"
+            alt="Arthur Morgan contemplando el horizonte en busca de redención al amanecer"
             class="img-fluid rounded"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">Redención y Elecciones</h2>
+          <h2 id="redencion" class="mb-3">Redención y Elecciones</h2>
           <p>
             El viaje de Arthur Morgan está marcado por la búsqueda de redención.
             Sus acciones y decisiones afectan el destino de la banda, su familia
@@ -219,21 +249,21 @@
         </article>
       </section>
 
-      <hr class="w-50 mx-auto" />
+      <hr class="w-50 mx-auto" aria-hidden="true" />
 
       <!-- El Ocaso del Oeste -->
-      <section class="row align-items-center text-center mb-5">
-        <aside class="col-lg-5 mb-3 mb-lg-0">
+      <section class="row align-items-center text-center mb-5" aria-labelledby="ocaso">
+        <div class="col-lg-5 mb-3 mb-lg-0">
           <img
             src="img/Final.png"
-            alt="Ocaso del Oeste"
+            alt="Puesta de sol simbolizando el fin de la era del Salvaje Oeste con silueta de vaquero"
             class="img-fluid rounded"
             loading="lazy"
             decoding="async"
           />
-        </aside>
+        </div>
         <article class="col-lg-7 px-lg-5">
-          <h2 class="mb-3">El Ocaso del Oeste</h2>
+          <h2 id="ocaso" class="mb-3">El Ocaso del Oeste</h2>
           <p>
             El mundo que conocían los forajidos está desapareciendo. La
             modernización, la llegada del ferrocarril y la expansión de la ley
@@ -246,15 +276,18 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center mt-5 p-4">
+    <footer class="bg-dark text-white text-center mt-5 p-4" role="contentinfo">
       <div class="container">
         <p class="mb-2">
-          El contenido de la comunidad está disponible bajo CC-BY-SA a menos que
-          se indique lo contrario.
+          El contenido de la comunidad está disponible bajo 
+          <abbr title="Creative Commons Atribución-CompartirIgual">CC-BY-SA</abbr> 
+          a menos que se indique lo contrario.
         </p>
         <a
           href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"
           class="text-white text-decoration-underline"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Créditos y Licencias de Uso Detalladas
         </a>
@@ -262,21 +295,23 @@
     </footer>
 
     <!-- AUDIO GLOBAL -->
-    <audio id="audioBackground" loop>
+    <audio id="audioBackground" loop aria-label="Música de fondo: American Venom">
       <source src="audio/American Venom.mp3" type="audio/mpeg" />
       <source src="audio/American-Venom.ogg" type="audio/ogg" />
-      Tu navegador no soporta audio HTML5.
+      <p>Tu navegador no soporta el elemento de audio HTML5.</p>
     </audio>
 
     <!-- BURBUJA DE AUDIO -->
-    <div id="audioBubble" class="audio-bubble">
-      <i id="audioIcon" class="bi bi-music-note-beamed"></i>
-    </div>
+    <button id="audioBubble" class="audio-bubble" aria-label="Controlar reproducción de música de fondo" aria-pressed="false">
+      <i id="audioIcon" class="bi bi-music-note-beamed" aria-hidden="true"></i>
+      <span class="visually-hidden">Reproducir/Pausar música</span>
+    </button>
 
     <script src="burbuja.js"></script>
 
-
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-..." 
+            crossorigin="anonymous"></script>
   </body>
 </html>
